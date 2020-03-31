@@ -1,10 +1,7 @@
 function myFunction() {
-    
-
-
-    
-    document.getElementById("demo").innerHTML = "";
-
+    document.getElementById("peso");
+    document.getElementById("altura");
+    document.getElementById("demo").innerHTML = "meu IMC é "+(peso/(altura*altura));
 }
 
 function medFunction(){

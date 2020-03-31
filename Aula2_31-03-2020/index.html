@@ -39,11 +39,26 @@
     
     <h2> RESPOSTAS </h2>  
         
-        <button onclick="myFunction()"> IMC </button>
+    <p>
+        <form action="/pagina-processa-dados-do-form" method="post">
+            <div>
+                <label for="nome"> Peso:</label>
+                <input type="number" id="peso" />
+            </div>
+            <div>
+                <label for="email"> Altura:</label>
+                <input type="number" id="altura" />
+            </div>
 
-        <p id="demo"></p>
+            <button onclick="myFunction()"> IMC </button>
 
-        <p> </p>
+            <p id="demo"></p>
+    
+            <p> </p>
+        </form>
+
+    </p>
+
 
         <button onclick="medFunction()"> MEDIA </button>
 
