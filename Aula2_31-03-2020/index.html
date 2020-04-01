@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 1</title>
+    <title>Aula 2 </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,7 +29,8 @@
        
     <p> </p>
     <p>
-        2) Guilherme tem 30 anos e tem 3 irmãs, a Carol que tem 20 anos, Márcia que tem 15, Patrícia que tem 10 anos. Qual a média de idade da família do Guilherme?
+        2) Guilherme tem 30 anos e tem 3 irmãs, a Carol que tem 20 anos, Márcia que tem 15, Patrícia que tem 10 anos. 
+        Qual a média de idade da família do Guilherme?
     </p>
 
     <p> </p>
@@ -40,38 +41,41 @@
     <h2> RESPOSTAS </h2>  
         
     <p>
-        <form action="/pagina-processa-dados-do-form" method="post">
+        <form  id="formulario">
             <div>
-                <label for="nome"> Peso:</label>
-                <input type="number" id="peso" />
+                <label for="kilos"> Peso (kg):</label>
+                <input type="number" name="kilos" />
             </div>
             <div>
-                <label for="email"> Altura:</label>
-                <input type="number" id="altura" />
+                <label for="altura"> Altura (coloque com vírgula):</label>
+                <input type="number" name="altura" />
             </div>
-
-            <button onclick="myFunction()"> IMC </button>
-
+            <button type="button" onclick="myFunction()"> IMC </button>
             <p id="demo"></p>
-    
             <p> </p>
         </form>
-
     </p>
 
-
-        <button onclick="medFunction()"> MEDIA </button>
-
+        <button type="button" onclick="medFunction()"> MEDIA </button>
         <p id=med></p>
-
         <p> </p>
 
-        <p> </p>
-
-        <button onclick="idaFunction()"> IDADE </button>
-
-        <p id=de></p>
-
+        <p>
+            <form  id="form">
+                <div>
+                    <label for="ano"> Em que ano vc nasceu:</label>
+                    <input type="number" name="ano" />
+                </div>
+                <div>
+                    <label for="atual"> Informe o ano atual:</label>
+                    <input type="number" name="atual" />
+                </div>
+                
+                <button type="button" onclick="idaFunction()"> IDADE </button>
+                <p id="de"></p>
+                <p> </p>
+            </form>
+        </p>
 </body>
 
 <script src="script.js"></script>
